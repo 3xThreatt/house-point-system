@@ -87,7 +87,7 @@
     <div id="canvas"></div>
       <div class="pointBreakdown">
         <h1>Points Breakdown</h1>
-        <h3><u>Academic Quiz Night<?php echo $hKeaRow?></u></h3>
+        <h3><u>Academic Quiz Night</u></h3>
         <ul>
           <li class="kokako">Briar Geange - Kokako - 1 PT</li>
           <li class="kokako">Emily Wauters - Kokako - 1PT</li>
