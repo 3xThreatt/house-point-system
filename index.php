@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #00587C;">
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Long Bay college house points" />
@@ -87,11 +87,6 @@
   <body>
     <?php include("controllers/datacontroller.php");?>
     <div id="canvas"></div>
-    <?php echo $hTakahePoint; ?>
-    <?php echo $hTiekePoint; ?>
-    <?php echo $hTaraItiPoint; ?>
-    <?php echo $hKeaPoint; ?>
-    <?php echo $hKokakoPoint; ?>
       <div class="pointBreakdown">
         <h1>Points Breakdown</h1>
         <h3><u>Academic Quiz Night</u></h3>
