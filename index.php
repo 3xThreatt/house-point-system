@@ -297,7 +297,7 @@
 
       function drawBarPerHouse(i, z) {
         //Draw Bar rectangle
-        rectMode(CORNERS).noStroke().fill(CurrentColourArray[i]);
+        rectMode(CORNERS).noStroke().fill([255, 255, 255]);
         rect(xPos + 90 * i, 510, xPos + 70 + 90 * i, barSize[i] - 5 + z);
 
         //Draw bird image at top of the bar
