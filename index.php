@@ -273,16 +273,16 @@
       if (frameCount > 100) {
         drawBarPerHouse(0, 0);
       }
-      else if (frameCount > 200) {
+      if (frameCount > 200) {
         drawBarPerHouse(1, 0);
       }
-      else if (frameCount > 300) {
+      if (frameCount > 300) {
         drawBarPerHouse(2, 0);
       }
-      else if (frameCount > 400) {
+      if (frameCount > 400) {
         drawBarPerHouse(3, 0);
       }
-      else if (frameCount > 500) {
+      if (frameCount > 500) {
         drawBarPerHouse(4, 0);
       }
 
