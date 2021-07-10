@@ -16,7 +16,7 @@
 
       html,
       body {
-        background-color: rgb(235, 249, 255);
+        background-color: rgb(0, 88, 124);
         margin: 5;
       }
       .p5Canvas {
