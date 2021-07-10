@@ -152,7 +152,6 @@ function drawBars() {
 
     //Draw bird image at top of the bar
     image(birdImg[i], xPos + 90 * i, barSize[i] - 35 + z, 70, 70);
-    image.filter = "blur(25px)";
 
     //Draws text at top of bar
     if (z > 0) {
