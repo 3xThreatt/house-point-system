@@ -197,8 +197,14 @@
 
       image(LBCLogoImg, 10, 412, 120, 147);
 
+
       textSize(22);
       textAlign(CENTER);
+      text(<?php echo $hTakaheName; ?>, xPos + 90 * 0, 523, 70, 523>);
+      text(<?php echo $hTiekeName; ?>, xPos + 90 * 1, 523, 70, 523>);
+      text(<?php echo $hTaraIteName; ?>, xPos + 90 * 2, 523, 70, 523>);
+      text(<?php echo $hKeaName; ?>, xPos + 90 * 3, 523, 70, 523>);
+      text(<?php echo $hKokakoName; ?>, xPos + 90 * 2, 523, 70, 523>);
     }
 
     function barCalc() {
