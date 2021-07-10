@@ -88,7 +88,12 @@
     <?php include("controllers/datacontroller.php");?>
     <div id="canvas"></div>
       <div class="pointBreakdown">
-        <?php echo $hKeaDesc; ?>
+        <h3>Dynamic Takahe Points:<?php echo $hTakaheDesc; ?></h3>
+        <h3>Dynamic Tieke Points:<?php echo $hTiekeDesc; ?></h3>
+        <h3>Dynamic Tara Iti Points:<?php echo $hTaraItiDesc; ?></h3>
+        <h3>Dynamic Kea Points:<?php echo $hKeaDesc; ?></h3>
+        <h3>Dynamic Kokako Points:<?php echo $hKokakoDesc; ?></h3>
+
         <h1>Points Breakdown</h1>
         <h3><u>Academic Quiz Night</u></h3>
         <ul>

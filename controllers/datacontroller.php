@@ -29,10 +29,4 @@ $hTaraItiDesc = $hTaraItiRow[0];
 $hKeaDesc = $hKeaRow[0];
 $hKokakoDesc = $hKokakoRow[0];
 
-echo $hTakaheDesc;
-echo $hTiekeDesc;
-echo $hTaraItiDesc;
-echo $hKeaDesc;
-echo $hKokakoDesc;
-
 ?>
