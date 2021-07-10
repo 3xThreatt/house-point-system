@@ -189,7 +189,7 @@
       textSize(25).fill(255);
       text(q, 14, 200, 100, 150);
 
-      let r = "Made By Robin N";
+      let r = "Made By Robin N <?php echo $hTakaheName ?>";
       textAlign(LEFT);
       textFont("Calibri").textStyle(ITALIC);
       textSize(8).fill(255);
@@ -199,11 +199,6 @@
 
       textSize(22);
       textAlign(CENTER);
-      text(<?php echo $hTakaheName;  ?>, xPos + 90 * 0, 523, 70, 523);
-      text(<?php echo $hTiekeName;   ?>, xPos + 90 * 1, 523, 70, 523);
-      text(<?php echo $hTaraIteName; ?>, xPos + 90 * 2, 523, 70, 523);
-      text(<?php echo $hKeaName;     ?>, xPos + 90 * 3, 523, 70, 523);
-      text(<?php echo $hKokakoName;  ?>, xPos + 90 * 4, 523, 70, 523);
     }
 
     function barCalc() {
