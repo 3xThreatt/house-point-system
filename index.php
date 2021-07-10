@@ -27,6 +27,9 @@
 		    width: 600px;
 		    float: left;
         background-color: rgb(0, 88, 124);
+        padding: 0px;
+        border-style: none;
+        margin: 0px;
 	    }
       .pointBreakdown {
         display: block;
