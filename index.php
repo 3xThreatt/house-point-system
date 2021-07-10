@@ -231,19 +231,19 @@
 
     function barCalc() {
       max = Math.max(
-        <?php echo $hTakahePoint,
-        echo $hTiekePoint,
-        echo $hTaraItiPoint,
-        echo $hKeaPoint,
-        echo $hKokakoPoint ?>
+        data.houses[0].points,
+        data.houses[1].points,
+        data.houses[2].points,
+        data.houses[3].points,
+        data.houses[4].points
       );
 
       min = Math.min(
-        <?php echo $hTakahePoint,
-        echo $hTiekePoint,
-        echo $hTaraItiPoint,
-        echo $hKeaPoint,
-        echo $hKokakoPoint ?>
+        data.houses[0].points,
+        data.houses[1].points,
+        data.houses[2].points,
+        data.houses[3].points,
+        data.houses[4].points
       );
 
       for (b = 0; b < 5; b++)
