@@ -5,7 +5,6 @@
     <meta name="description" content="Long Bay college house points" />
     <meta name="author" content="Robin Nowlan" />
     <meta name="viewport" content="width=device-width, initial-scale=0.80" />
-
     <title>Long Bay College House Points</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
@@ -82,6 +81,7 @@
   </head>
 
   <body>
+    <?php include("controllers/datacontroller.php");?>
     <div id="canvas"></div>
       <div class="pointBreakdown">
         <h1>Points Breakdown</h1>
