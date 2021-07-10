@@ -301,7 +301,7 @@
           fill(255).text(
             Math.floor(map(z, 500, 0, 0, CurrentPointArray[i])),
             35 + xPos + 90 * i,
-            barSize[i] - 40 + zw
+            barSize[i] - 40 + z
           );
         } else {
           fill(255).text(
