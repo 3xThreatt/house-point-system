@@ -23,11 +23,11 @@ $hKokakoResult = mysql_query($con, $hKokakoQueryPoints);
 $hKokakoRow = mysql_fetch_array($hKokakoResult);
 
 
-$hTakaheDesc = $hTakaheRow['content']
-$hTiekeDesc = $hTiekeRow['content']
-$hTaraItiDesc = $hTaraItiRow['content']
-$hKeaDesc = $hKeaRow['content']
-$hKokakoDesc = $hKokakoRow['content']
+$hTakaheDesc = $hTakaheRow['content'];
+$hTiekeDesc = $hTiekeRow['content'];
+$hTaraItiDesc = $hTaraItiRow['content'];
+$hKeaDesc = $hKeaRow['content'];
+$hKokakoDesc = $hKokakoRow['content'];
 
 echo $hTakaheDesc;
 echo $hTiekeDesc;
