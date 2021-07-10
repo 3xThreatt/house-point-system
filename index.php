@@ -88,12 +88,6 @@
     <?php include("controllers/datacontroller.php");?>
     <div id="canvas"></div>
       <div class="pointBreakdown">
-        <h3>Dynamic Takahe Points:<?php echo $hTakaheDesc; ?></h3>
-        <h3>Dynamic Tieke Points:<?php echo $hTiekeDesc; ?></h3>
-        <h3>Dynamic Tara Iti Points:<?php echo $hTaraItiDesc; ?></h3>
-        <h3>Dynamic Kea Points:<?php echo $hKeaDesc; ?></h3>
-        <h3>Dynamic Kokako Points:<?php echo $hKokakoDesc; ?></h3>
-
         <h1>Points Breakdown</h1>
         <h3><u>Academic Quiz Night</u></h3>
         <ul>
@@ -204,9 +198,12 @@
 
       textSize(22);
       textAlign(CENTER);
-      for (i = 0; i < 5; i++) {
-        text(data.houses[i].name, xPos + 90 * i, 523, 70, 523);
-      }
+      text(<?php echo $hTakaheName; ?>, xPos + 90 * 1, 523, 70, 523);
+      text(<?php echo $hTiekeName; ?>, xPos + 90 * 2, 523, 70, 523);
+      text(<?php echo $hTaraIteName; ?>, xPos + 90 * 3, 523, 70, 523);
+      text(<?php echo $hKeaName; ?>, xPos + 90 * 4, 523, 70, 523);
+      text(<?php echo $hKokakoName; ?>, xPos + 90 * 5, 523, 70, 523);
+
     }
 
     function barCalc() {
