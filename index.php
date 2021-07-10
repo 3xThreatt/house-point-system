@@ -144,6 +144,7 @@
     var TaraIteCurrentPoint = "<?php echo $hTaraItePoint; ?>";
     var KeaCurrentPoint = "<?php echo $hKeaPoint; ?>";
     var KokakoCurrentPoint = "<?php echo $hKokakoPoint; ?>";
+    let CurrentPointArray = [TakaheCurrentPoint, TiekeCurrentPoint, TaraIteCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint];
 
 
     //Loads the images and data from github
@@ -244,8 +245,9 @@
 
       min = Math.min(TakaheCurrentPoint, TiekeCurrentPoint, TaraIteCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint);
 
+
       for (b = 0; b < 5; b++)
-        barSize[b] = [map(data.houses[b].points, min, max, 375, 85)];
+        barSize[b] = [map(CurrentPointArray[b], min, max, 375, 85)];
         print(barSize);
         mainScreenDraw();
     }
