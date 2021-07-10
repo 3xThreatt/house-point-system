@@ -18,7 +18,7 @@ $hKeaQueryPoints = "SELECT HousePoints FROM house WHERE HouseID=4";
 $hKeaResult = mysqli_query($con, $hKeaQueryPoints);
 $hKeaRow = mysqli_fetch_row($hKeaResult);
 
-$hKokakoQueryPoints = "SELECT HousePoints FROM house WHERE HouseID=1";
+$hKokakoQueryPoints = "SELECT HousePoints FROM house WHERE HouseID=5";
 $hKokakoResult = mysqli_query($con, $hKokakoQueryPoints);
 $hKokakoRow = mysqli_fetch_row($hKokakoResult);
 
