@@ -139,11 +139,11 @@
     let barSize = [];
     let framePerBar = [];
 
-    let TakaheCurrentPoint = "<?php echo $hTakahePoint; ?>";
-    let TiekeCurrentPoint = "<?php echo $hTiekePoint; ?>";
-    let TaraIteCurrentPoint = "<?php echo $hTaraItePoint; ?>";
-    let KeaCurrentPoint = "<?php echo $hKeaPoint; ?>";
-    let KokakoCurrentPoint = "<?php echo $hKokakoPoint; ?>";
+    var TakaheCurrentPoint = "<?php echo $hTakahePoint; ?>";
+    var TiekeCurrentPoint = "<?php echo $hTiekePoint; ?>";
+    var TaraIteCurrentPoint = "<?php echo $hTaraItePoint; ?>";
+    var KeaCurrentPoint = "<?php echo $hKeaPoint; ?>";
+    var KokakoCurrentPoint = "<?php echo $hKokakoPoint; ?>";
 
 
     //Loads the images and data from github
