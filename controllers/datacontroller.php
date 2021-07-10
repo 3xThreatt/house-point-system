@@ -41,7 +41,7 @@ $hTiekePoint = $hTiekeRow[3];
 $hTaraIteID =  $hTaraItiRow[0];
 $hTaraIteName = $hTaraItiRow[1];
 $hTaraIteColour = $hTaraItiRow[2];
-$hTaraItiPoint = $hTaraItiRow[3];
+$hTaraItePoint = $hTaraItiRow[3];
 
 $hKeaID = $hKeaRow[0];
 $hKeaName = $hKeaRow[1];
