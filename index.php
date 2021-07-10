@@ -81,6 +81,7 @@
   </head>
 
   <body>
+    <?php error_reporting(E_ERROR | E_WARNING | E_PARSE); ?>
     <?php include("controllers/datacontroller.php");?>
     <div id="canvas"></div>
       <div class="pointBreakdown">
