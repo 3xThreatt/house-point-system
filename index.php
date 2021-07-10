@@ -128,13 +128,19 @@
     let LBCLogoImg; //LBC logo
     var birdImgStr = [];
     let birdImg = [];
-    let HousePoints = ["<?php echo $hTakahePoint; ?>", "<?php echo $hTiekePoint; ?>", "<?php echo $hTaraItiPoint; ?>", "<?php echo $hKeaPoint; ?>", "<?php echo $hKokakoPoint ?>"];
 
     let max, min; //Minimum and maxiamum bar size
     var xPos = 147; //X pos offset
     let h = 0;
     let barSize = [];
     let framePerBar = [];
+
+    let TakaheCurrentPoint = "<?php echo $hTakahePoint; ?>";
+    let TiekeCurrentPoint = "<?php echo $hTiekePoint; ?>";
+    let TaraIteCurrentPoint = "<?php echo $hTaraItePoint; ?>";
+    let KeaCurrentPoint = "<?php echo $hKeaPoint; ?>";
+    let KokakoCurrentPoint = "<?php echo $hKokakoPoint; ?>";
+
 
     //Loads the images and data from github
     function preload() {
@@ -230,21 +236,9 @@
     }
 
     function barCalc() {
-      max = Math.max(
-        data.houses[0].points,
-        data.houses[1].points,
-        data.houses[2].points,
-        data.houses[3].points,
-        data.houses[4].points
-      );
+      max = Math.max(TakaheCurrentPoint, TiekeCurrentPoint, TaraIteCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint);
 
-      min = Math.min(
-        data.houses[0].points,
-        data.houses[1].points,
-        data.houses[2].points,
-        data.houses[3].points,
-        data.houses[4].points
-      );
+      min = Math.min(TakaheCurrentPoint, TiekeCurrentPoint, TaraIteCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint);
 
       for (b = 0; b < 5; b++)
         barSize[b] = [map(data.houses[b].points, min, max, 375, 85)];
