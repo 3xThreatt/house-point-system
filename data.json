@@ -1,0 +1,139 @@
+{
+  "houses": [
+    {
+      "name": "Takahē",
+      "points": 97,
+      "colour": [234, 76, 74],
+      "contrib": [
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        }
+      ]
+    },
+    {
+      "name": "Tïeke",
+      "points": 75,
+      "colour": [252, 145, 62],
+      "contrib": [
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        }
+      ]
+    },
+    {
+      "name": "Tara Iti",
+      "points": 95,
+      "colour": [255, 200, 72],
+      "contrib": [
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        }
+      ]
+    },
+    {
+      "name": "Kea",
+      "points": 84,
+      "colour": [138, 200, 83],
+      "contrib": [
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        }
+      ]
+    },
+    {
+      "name": "Kōkako",
+      "points": 68,
+      "colour": [68, 124, 202],
+      "contrib": [
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        },
+        {
+          "name": "Rob",
+          "points": 1,
+          "event": "running"
+        }
+      ]
+    }
+  ]
+}

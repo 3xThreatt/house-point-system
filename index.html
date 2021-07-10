@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Long Bay college house points" />
+    <meta name="author" content="Robin Nowlan" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.80" />
+
+    <title>Long Bay College House Points</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+      html,
+      body {
+        background-color: rgb(235, 249, 255);
+        margin: 5;
+      }
+      .p5Canvas {
+        display: block;
+      }
+	  #canvas{
+		  width: 600px;
+		  float: left;
+	  }
+      .pointBreakdown {
+        display: block;
+		margin-left: 605px;
+		padding: 0;        
+		font-family: "Calibri";
+		height: 600px;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+	  li{
+		  font-size: 17px;
+	  }
+
+      .takahe::before {
+        content: "\2022";
+        color: rgb(234, 76, 74);
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      .tieke::before {
+        content: "\2022";
+        color: rgb(252, 145, 62);
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      .tara::before {
+        content: "\2022";
+        color: rgb(255, 200, 72);
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      .kea::before {
+        content: "\2022";
+        color: rgb(138, 200, 83);
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      .kokako::before {
+        content: "\2022";
+        color: rgb(68, 124, 202);
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="canvas"></div>
+      <div class="pointBreakdown">
+        <h1>Points Breakdown</h1>
+        <h3><u>Academic Quiz Night</u></h3>
+        <ul>
+          <li class="kokako">Briar Geange - Kokako - 1 PT</li>
+          <li class="kokako">Emily Wauters - Kokako - 1PT</li>
+          <li class="tara">Mary McCallum - Tara iti - 1 PT</li>
+          <li class="kea">Paris Coulson - Kea - 1PT</li>
+          <li class="kokako">Jaime Bell - Kokako - 1 PT</li>
+          <li class="takahe">Lauren Ward - Takahe 1PT</li>
+          <li class="takahe">Thalia Philpot - Takahe - 1 PT</li>
+          <li class="kokako">Mr Martyn Longstaff - Kokako - 1 PT</li>
+        </ul>
+
+        <h3><u>Senior Speech Competition</u></h3>
+        <ul>
+          <li class="kea">Sam Stockley- Kea - 2 PTS</li>
+          <li class="takahe">Kate McIntosh- Takahe - 2 PTS</li>
+          <li class="kea">Ruby Cooper- Kea - 2 PTS</li>
+          <li class="tara">Zoe Berry- Tara iti - 2 PTS</li>
+        </ul>
+
+        <h3><u>Foster Hope - PJ Collection</u></h3>
+        <ul>
+          <li class="tieke">Tieke 1st Place - 5 PTS</li>
+          <li class="takahe">Takahe 2nd Place - 4 PTS</li>
+          <li class="tara">Tara iti 3rd Place - 3 PTS</li>
+          <li class="kea">Kea - 4th Place 2 PTS</li>
+          <li class="kokako">Kokako 5th Place 1 PT</li>
+        </ul>
+      </div>
+
+    <sub>Refresh the page to watch the animation again</sub>
+  </body>
+</html>
