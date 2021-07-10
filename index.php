@@ -8,6 +8,10 @@
     <title>Long Bay College House Points</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <?php ini_set('display_errors', 1);
+          ini_set('display_startup_errors', 1);
+          error_reporting(E_ALL);
+          ?>
     <style>
 
       html,
@@ -81,7 +85,6 @@
   </head>
 
   <body>
-    <?php error_reporting(E_ERROR | E_WARNING | E_PARSE); ?>
     <?php include("controllers/datacontroller.php");?>
     <div id="canvas"></div>
       <div class="pointBreakdown">
