@@ -128,6 +128,7 @@
     let LBCLogoImg; //LBC logo
     var birdImgStr = [];
     let birdImg = [];
+    let HousesName = [<?php echo $hTakaheName,  $hTiekeName,  $hTaraIteName, $hKeaName, $hKakakoName; ?>]
 
     let max, min; //Minimum and maxiamum bar size
     var xPos = 147; //X pos offset
@@ -199,12 +200,9 @@
 
       textSize(22);
       textAlign(CENTER);
-      text(<?php echo $hTakaheName; ?>, xPos + 90 * 1, 523, 70, 523);
-      text(<?php echo $hTiekeName; ?>, xPos + 90 * 2, 523, 70, 523);
-      text(<?php echo $hTaraIteName; ?>, xPos + 90 * 3, 523, 70, 523);
-      text(<?php echo $hKeaName; ?>, xPos + 90 * 4, 523, 70, 523);
-      text(<?php echo $hKokakoName; ?>, xPos + 90 * 5, 523, 70, 523);
-
+      for (i = 0; i < 5; i++) {
+        text(HousesName[i], xPos + 90 * i, 523, 70, 523);
+      }
     }
 
     function barCalc() {
