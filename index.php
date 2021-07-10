@@ -87,7 +87,11 @@
   <body>
     <?php include("controllers/datacontroller.php");?>
     <div id="canvas"></div>
-    <?php echo $hTakaheName; ?>
+    <?php echo $TaraIteCurrentPoint; ?>
+    <?php echo $TiekeCurrentPoint; ?>
+    <?php echo $TaraIteCurrentPoint; ?>
+    <?php echo $KeaCurrentPoint; ?>
+    <?php echo $KokakoCurrentPoint; ?>
       <div class="pointBreakdown">
         <h1>Points Breakdown</h1>
         <h3><u>Academic Quiz Night</u></h3>
