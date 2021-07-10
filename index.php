@@ -23,7 +23,7 @@
         display: block;
       }
 	    #canvas{
-		    width: 100%;
+		    width: 600px;
 		    float: left;
 	    }
       .pointBreakdown {
