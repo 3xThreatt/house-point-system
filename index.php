@@ -87,6 +87,7 @@
   <body>
     <?php include("controllers/datacontroller.php");?>
     <div id="canvas"></div>
+    <?php echo $hTakaheName; ?>
       <div class="pointBreakdown">
         <h1>Points Breakdown</h1>
         <h3><u>Academic Quiz Night</u></h3>
