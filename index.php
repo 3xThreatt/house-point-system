@@ -128,6 +128,7 @@
     let LBCLogoImg; //LBC logo
     var birdImgStr = [];
     let birdImg = [];
+    let HousePoints = ["<?php echo $hTakahePoint; ?>", "<?php echo $hTiekePoint; ?>", "<?php echo $hTaraItiPoint; ?>", "<?php echo $hKeaPoint; ?>", "<?php echo $hKokakoPoint ?>"];
 
     let max, min; //Minimum and maxiamum bar size
     var xPos = 147; //X pos offset
@@ -189,7 +190,7 @@
       textSize(25).fill(255);
       text(q, 14, 200, 100, 150);
 
-      let r = "Made By Robin N <?php echo $hTakaheName ?>";
+      let r = "Made By Robin N";
       textAlign(LEFT);
       textFont("Calibri").textStyle(ITALIC);
       textSize(8).fill(255);
@@ -230,25 +231,25 @@
 
     function barCalc() {
       max = Math.max(
-        data.houses[0].points,
-        data.houses[1].points,
-        data.houses[2].points,
-        data.houses[3].points,
-        data.houses[4].points
+        <?php echo $hTakahePoint,
+        echo $hTiekePoint,
+        echo $hTaraItiPoint,
+        echo $hKeaPoint,
+        echo $hKokakoPoint ?>
       );
 
       min = Math.min(
-        data.houses[0].points,
-        data.houses[1].points,
-        data.houses[2].points,
-        data.houses[3].points,
-        data.houses[4].points
+        <?php echo $hTakahePoint,
+        echo $hTiekePoint,
+        echo $hTaraItiPoint,
+        echo $hKeaPoint,
+        echo $hKokakoPoint ?>
       );
 
       for (b = 0; b < 5; b++)
-        barSize[b] = [map(data.houses[b].points, min, max, 375, 85)];
-      print(barSize);
-      mainScreenDraw();
+        barSize[b] = [map(HousePoints[b], min, max, 375, 85)];
+        print(barSize);
+        mainScreenDraw();
     }
 
     function drawBars() {
