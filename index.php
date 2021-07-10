@@ -247,7 +247,7 @@
       );
 
       for (b = 0; b < 5; b++)
-        barSize[b] = [map(HousePoints[b], min, max, 375, 85)];
+        barSize[b] = [map(data.houses[b].points, min, max, 375, 85)];
         print(barSize);
         mainScreenDraw();
     }
