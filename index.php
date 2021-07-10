@@ -5,12 +5,14 @@
     <meta name="description" content="Long Bay college house points" />
     <meta name="author" content="Robin Nowlan" />
     <meta name="viewport" content="width=device-width, initial-scale=0.80" />
+    <?php include("datacontroller.php");?>
 
     <title>Long Bay College House Points</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
     <!--<script src="sketch.js"></script> -->
     <style>
+
       html,
       body {
         background-color: rgb(235, 249, 255);
@@ -85,7 +87,7 @@
     <div id="canvas"></div>
       <div class="pointBreakdown">
         <h1>Points Breakdown</h1>
-        <h3><u>Academic Quiz Night</u></h3>
+        <h3><u>Academic Quiz Night<?php echo $hKeaRow?></u></h3>
         <ul>
           <li class="kokako">Briar Geange - Kokako - 1 PT</li>
           <li class="kokako">Emily Wauters - Kokako - 1PT</li>
@@ -118,14 +120,7 @@
     <sub>Refresh the page to watch the animation again</sub>
   </body>
   <script>
-        /*
-        To do!!
-        Make the bars animated as they rise up
-        Optimise further 
-        Add interactability
-        Add export to image functionality
-    */
-    //Imported data
+
     let data; //JSON data file
     let LBCLogoImg; //LBC logo
     var birdImgStr = [];
