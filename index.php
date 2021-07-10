@@ -5,12 +5,10 @@
     <meta name="description" content="Long Bay college house points" />
     <meta name="author" content="Robin Nowlan" />
     <meta name="viewport" content="width=device-width, initial-scale=0.80" />
-    <?php include("datacontroller.php");?>
 
     <title>Long Bay College House Points</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-    <!--<script src="sketch.js"></script> -->
     <style>
 
       html,
