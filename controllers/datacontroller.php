@@ -38,10 +38,10 @@ $hTiekeName = $hTiekeRow[1];
 $hTiekeColour = $hTiekeRow[2];
 $hTiekePoint = $hTiekeRow[3];
 
-$hTaraIteID =  $hTaraItiRow[0];
-$hTaraIteName = $hTaraItiRow[1];
-$hTaraIteColour = $hTaraItiRow[2];
-$hTaraItePoint = $hTaraItiRow[3];
+$hTaraItiID =  $hTaraItiRow[0];
+$hTaraItiName = $hTaraItiRow[1];
+$hTaraItiColour = $hTaraItiRow[2];
+$hTaraItiPoint = $hTaraItiRow[3];
 
 $hKeaID = $hKeaRow[0];
 $hKeaName = $hKeaRow[1];

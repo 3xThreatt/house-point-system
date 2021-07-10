@@ -89,7 +89,7 @@
     <div id="canvas"></div>
     <?php echo $hTakahePoint; ?>
     <?php echo $hTiekePoint; ?>
-    <?php echo $hTaraItePoint; ?>
+    <?php echo $hTaraItiPoint; ?>
     <?php echo $hKeaPoint; ?>
     <?php echo $hKokakoPoint; ?>
       <div class="pointBreakdown">
@@ -141,10 +141,18 @@
 
     var TakaheCurrentPoint = "<?php echo $hTakahePoint; ?>";
     var TiekeCurrentPoint = "<?php echo $hTiekePoint; ?>";
-    var TaraIteCurrentPoint = "<?php echo $hTaraItePoint; ?>";
+    var TaraItiCurrentPoint = "<?php echo $hTaraItiPoint; ?>";
     var KeaCurrentPoint = "<?php echo $hKeaPoint; ?>";
     var KokakoCurrentPoint = "<?php echo $hKokakoPoint; ?>";
-    let CurrentPointArray = [TakaheCurrentPoint, TiekeCurrentPoint, TaraIteCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint];
+
+    var TakaheCurrentColour = "<?php echo $hTakaheColour; ?>";
+    var TiekeCurrentColour = "<?php echo $hTiekeColour; ?>";
+    var TaraItiCurrentColour = "<?php echo $hTaraItiColour; ?>";
+    var KeaCurrentColour = "<?php echo $hKeaColour; ?>";
+    var KokakoCurrentColour = "<?php echo $hKokakoColour; ?>";
+
+    let CurrentPointArray = [TakaheCurrentPoint, TiekeCurrentPoint, TaraItiCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint];
+    let CurrentColourArray = [TakaheCurrentColour, TiekeCurrentColour, TaraItiCurrentColour, KeaCurrentColour, KokakoCurrentColour];
 
 
     //Loads the images and data from github
@@ -223,10 +231,10 @@
       textSize(22);
       text(Tieke, xPos + 90 * 1, 523, 70, 523);
 
-      let TaraIte = "<?php echo $hTaraIteName; ?>";
+      let TaraIti = "<?php echo $hTaraItiName; ?>";
       textAlign(CENTER);
       textSize(22);
-      text(TaraIte, xPos + 90 * 2, 523, 70, 523);
+      text(TaraIti, xPos + 90 * 2, 523, 70, 523);
 
       let Kea = "<?php echo $hKeaName; ?>";
       textAlign(CENTER);
@@ -241,9 +249,9 @@
     }
 
     function barCalc() {
-      max = Math.max(TakaheCurrentPoint, TiekeCurrentPoint, TaraIteCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint);
+      max = Math.max(TakaheCurrentPoint, TiekeCurrentPoint, TaraItiCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint);
 
-      min = Math.min(TakaheCurrentPoint, TiekeCurrentPoint, TaraIteCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint);
+      min = Math.min(TakaheCurrentPoint, TiekeCurrentPoint, TaraItiCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint);
 
 
       for (b = 0; b < 5; b++)
@@ -289,7 +297,7 @@
 
       function drawBarPerHouse(i, z) {
         //Draw Bar rectangle
-        rectMode(CORNERS).noStroke().fill(data.houses[i].colour);
+        rectMode(CORNERS).noStroke().fill(CurrentColourArray[i]);
         rect(xPos + 90 * i, 510, xPos + 70 + 90 * i, barSize[i] - 5 + z);
 
         //Draw bird image at top of the bar
@@ -298,13 +306,13 @@
         //Draws text at top of bar
         if (z > 0) {
           fill(255).text(
-            Math.floor(map(z, 500, 0, 0, data.houses[i].points)),
+            Math.floor(map(z, 500, 0, 0, CurrentPointArray[i])),
             35 + xPos + 90 * i,
             barSize[i] - 40 + z
           );
         } else {
           fill(255).text(
-            data.houses[i].points,
+            CurrentPointArray[i],
             35 + xPos + 90 * i,
             barSize[i] - 40 + z
           );
