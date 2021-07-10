@@ -145,14 +145,7 @@
     var KeaCurrentPoint = "<?php echo $hKeaPoint; ?>";
     var KokakoCurrentPoint = "<?php echo $hKokakoPoint; ?>";
 
-    var TakaheCurrentColour = "<?php echo $hTakaheColour; ?>";
-    var TiekeCurrentColour = "<?php echo $hTiekeColour; ?>";
-    var TaraItiCurrentColour = "<?php echo $hTaraItiColour; ?>";
-    var KeaCurrentColour = "<?php echo $hKeaColour; ?>";
-    var KokakoCurrentColour = "<?php echo $hKokakoColour; ?>";
-
     let CurrentPointArray = [TakaheCurrentPoint, TiekeCurrentPoint, TaraItiCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint];
-    let CurrentColourArray = [TakaheCurrentColour, TiekeCurrentColour, TaraItiCurrentColour, KeaCurrentColour, KokakoCurrentColour];
 
 
     //Loads the images and data from github
@@ -297,7 +290,7 @@
 
       function drawBarPerHouse(i, z) {
         //Draw Bar rectangle
-        rectMode(CORNERS).noStroke().fill([255, 255, 255]);
+        rectMode(CORNERS).noStroke().fill(data.houses[i].colour);
         rect(xPos + 90 * i, 510, xPos + 70 + 90 * i, barSize[i] - 5 + z);
 
         //Draw bird image at top of the bar
