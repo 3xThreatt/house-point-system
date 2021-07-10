@@ -23,7 +23,7 @@
         display: block;
       }
 	    #canvas{
-		    width: 600px;
+		    width: 100%;
 		    float: left;
 	    }
       .pointBreakdown {
@@ -301,7 +301,7 @@
           fill(255).text(
             Math.floor(map(z, 500, 0, 0, CurrentPointArray[i])),
             35 + xPos + 90 * i,
-            barSize[i] - 40 + z
+            barSize[i] - 40 + zw
           );
         } else {
           fill(255).text(
