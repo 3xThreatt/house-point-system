@@ -209,22 +209,22 @@
       let Tieke = "<?php echo $hTiekeName; ?>";
       textAlign(CENTER);
       textSize(22);
-      text(Takahe, xPos + 90 * 1, 523, 70, 523);
+      text(Tieke, xPos + 90 * 1, 523, 70, 523);
 
       let TaraIte = "<?php echo $hTaraIteName; ?>";
       textAlign(CENTER);
       textSize(22);
-      text(Takahe, xPos + 90 * 2, 523, 70, 523);
+      text(TaraIte, xPos + 90 * 2, 523, 70, 523);
 
       let Kea = "<?php echo $hKeaName; ?>";
       textAlign(CENTER);
       textSize(22);
-      text(Takahe, xPos + 90 * 3, 523, 70, 523);
+      text(Kea, xPos + 90 * 3, 523, 70, 523);
 
       let Kokako = "<?php echo $hKokakoName; ?>";
       textAlign(CENTER);
       textSize(22);
-      text(Takahe, xPos + 90 * 4, 523, 70, 523);
+      text(Kokako, xPos + 90 * 4, 523, 70, 523);
 
     }
 
