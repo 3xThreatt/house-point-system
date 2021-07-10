@@ -21,10 +21,12 @@
       }
       .p5Canvas {
         display: block;
+        background-color: rgb(0, 88, 124);
       }
 	    #canvas{
 		    width: 600px;
 		    float: left;
+        background-color: rgb(0, 88, 124);
 	    }
       .pointBreakdown {
         display: block;
@@ -32,6 +34,7 @@
     		padding: 0;        
     		font-family: "Calibri";
     		height: 600px;
+        background-color: rgb(0, 88, 124);
       }
 
       ul {
