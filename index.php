@@ -88,6 +88,7 @@
     <?php include("controllers/datacontroller.php");?>
     <div id="canvas"></div>
       <div class="pointBreakdown">
+        <?php echo $hKeaDesc; ?>
         <h1>Points Breakdown</h1>
         <h3><u>Academic Quiz Night</u></h3>
         <ul>
