@@ -206,6 +206,26 @@
       textSize(22);
       text(Takahe, xPos + 90 * 0, 523, 70, 523);
 
+      let Tieke = "<?php echo $hTiekeName; ?>";
+      textAlign(CENTER);
+      textSize(22);
+      text(Takahe, xPos + 90 * 1, 523, 70, 523);
+
+      let TaraIte = "<?php echo $hTaraIteName; ?>";
+      textAlign(CENTER);
+      textSize(22);
+      text(Takahe, xPos + 90 * 2, 523, 70, 523);
+
+      let Kea = "<?php echo $hKeaName; ?>";
+      textAlign(CENTER);
+      textSize(22);
+      text(Takahe, xPos + 90 * 3, 523, 70, 523);
+
+      let Kokako = "<?php echo $hKokakoName; ?>";
+      textAlign(CENTER);
+      textSize(22);
+      text(Takahe, xPos + 90 * 4, 523, 70, 523);
+
     }
 
     function barCalc() {
