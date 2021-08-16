@@ -129,7 +129,7 @@
   </body>
   <script>
     // Create a capturer that exports a WebM video
-    var capturer = new CCapture({ format: "webm" });
+    //var capturer = new CCapture({ format: "webm" });
 
     let animationFrames = 600;
     let data; //JSON data file
@@ -158,7 +158,7 @@
     ];
 
     //Loads the images and data from github
-    function preload() {
+    function loadImages() {
       LBCLogoImg = loadImage(
         "https://raw.githubusercontent.com/3xThreatt/house-point-system/main/LBC-logo.png "
       );
@@ -182,17 +182,18 @@
       frameRate(60);
       var myCanvas = createCanvas(600, 600);
       myCanvas.parent("canvas");
+      loadImages();
       mainScreenDraw();
       barCalc();
     }
 
     function draw() {
-      if (frameCount === 1) capturer.start();
+      //if (frameCount === 1) capturer.start();
       h++;
       mainScreenDraw();
       drawBars();
-      capturer.capture(document.getElementById("defaultCanvas0"));
-      if (frameCount == animationFrames) capturer.stop();
+      //capturer.capture(document.getElementById("defaultCanvas0"));
+      //if (frameCount == animationFrames) capturer.stop();
     }
 
     function mainScreenDraw() {
@@ -339,7 +340,7 @@
     }
 
     function exportVideo() {
-      capturer.save();
+      //capturer.save();
     }
   </script>
 </html>
