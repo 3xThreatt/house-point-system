@@ -123,7 +123,8 @@
         <li class="kokako">Kokako 5th Place 1 PT</li>
       </ul>
     </div>
-
+    <button onclick="exportImage()">Export Image</button>
+    <button onclick="exportVideo()">Export Video</button>
     <sub>Refresh the page to watch the animation again</sub>
   </body>
   <script>
