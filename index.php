@@ -160,17 +160,17 @@
     //Loads the images and data from github
     function preload() {
       LBCLogoImg = loadImage(
-        "https://raw.githubusercontent.com/17177/HousePointsSystem/main/LBC-logo.png"
+        "https://raw.githubusercontent.com/3xThreatt/house-point-system/main/LBC-logo.png "
       );
       data = loadJSON(
-        "https://raw.githubusercontent.com/17177/HousePointsSystem/main/data.json"
+        "https://raw.githubusercontent.com/3xThreatt/house-point-system/main/data.json"
       );
       birdImgStr = [
-        "https://raw.githubusercontent.com/17177/HousePointsSystem/main/takehe.png",
-        "https://raw.githubusercontent.com/17177/HousePointsSystem/main/tieke.png",
-        "https://raw.githubusercontent.com/17177/HousePointsSystem/main/tara%20iti.png",
-        "https://raw.githubusercontent.com/17177/HousePointsSystem/main/kea.png",
-        "https://raw.githubusercontent.com/17177/HousePointsSystem/main/kokako.png",
+        "https://raw.githubusercontent.com/3xThreatt/house-point-system/main/takehe.png",
+        "https://raw.githubusercontent.com/3xThreatt/house-point-system/main/tieke.png",
+        "https://raw.githubusercontent.com/3xThreatt/house-point-system/main/tara%20iti.png",
+        "https://raw.githubusercontent.com/3xThreatt/house-point-system/main/kea.png",
+        "https://raw.githubusercontent.com/3xThreatt/house-point-system/main/kokako.png",
       ];
 
       for (i = 0; i < 5; i++) {
@@ -208,13 +208,13 @@
       textSize(35).fill(255);
       text(s, 14, 30, 160, 150);
 
-      let q = "Term 2 Week 10";
+      let q = "Term 3 Week 3";
       textAlign(LEFT);
       textFont("Calibri").textStyle(BOLD);
       textSize(25).fill(255);
       text(q, 14, 200, 100, 150);
 
-      let r = "Made By Robin N";
+      let r = "Made By Robin N & Jamie D";
       textAlign(LEFT);
       textFont("Calibri").textStyle(ITALIC);
       textSize(8).fill(255);
