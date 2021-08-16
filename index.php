@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: #00587C;">
+<html lang="en" style="background-color: #00587c">
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Long Bay college house points" />
@@ -13,7 +13,6 @@
           error_reporting(E_ALL);
           ?>
     <style>
-
       html,
       body {
         background-color: rgb(0, 88, 124);
@@ -23,20 +22,20 @@
         display: block;
         background-color: rgb(0, 88, 124);
       }
-	    #canvas{
-		    width: 600px;
-		    float: left;
+      #canvas {
+        width: 600px;
+        float: left;
         background-color: rgb(0, 88, 124);
         padding: 0px;
         border-style: none;
         margin: 0px;
-	    }
+      }
       .pointBreakdown {
         display: block;
-    		margin-left: 605px;
-    		padding: 0;        
-    		font-family: "Calibri";
-    		height: 600px;
+        margin-left: 605px;
+        padding: 0;
+        font-family: "Calibri";
+        height: 600px;
         background-color: rgb(0, 88, 124);
       }
 
@@ -44,9 +43,9 @@
         list-style: none;
       }
 
-  	  li{
-  		  font-size: 17px;
-  	  }
+      li {
+        font-size: 17px;
+      }
 
       .takahe::before {
         content: "\2022";
@@ -93,42 +92,45 @@
   <body>
     <?php include("controllers/datacontroller.php");?>
     <div id="canvas"></div>
-      <div class="pointBreakdown">
-        <h1>Points Breakdown</h1>
-        <h3><u>Academic Quiz Night</u></h3>
-        <ul>
-          <li class="kokako">Briar Geange - Kokako - 1 PT</li>
-          <li class="kokako">Emily Wauters - Kokako - 1PT</li>
-          <li class="tara">Mary McCallum - Tara iti - 1 PT</li>
-          <li class="kea">Paris Coulson - Kea - 1PT</li>
-          <li class="kokako">Jaime Bell - Kokako - 1 PT</li>
-          <li class="takahe">Lauren Ward - Takahe 1PT</li>
-          <li class="takahe">Thalia Philpot - Takahe - 1 PT</li>
-          <li class="kokako">Mr Martyn Longstaff - Kokako - 1 PT</li>
-        </ul>
+    <div class="pointBreakdown">
+      <h1>Points Breakdown</h1>
+      <h3><u>Academic Quiz Night</u></h3>
+      <ul>
+        <li class="kokako">Briar Geange - Kokako - 1 PT</li>
+        <li class="kokako">Emily Wauters - Kokako - 1PT</li>
+        <li class="tara">Mary McCallum - Tara iti - 1 PT</li>
+        <li class="kea">Paris Coulson - Kea - 1PT</li>
+        <li class="kokako">Jaime Bell - Kokako - 1 PT</li>
+        <li class="takahe">Lauren Ward - Takahe 1PT</li>
+        <li class="takahe">Thalia Philpot - Takahe - 1 PT</li>
+        <li class="kokako">Mr Martyn Longstaff - Kokako - 1 PT</li>
+      </ul>
 
-        <h3><u>Senior Speech Competition</u></h3>
-        <ul>
-          <li class="kea">Sam Stockley- Kea - 2 PTS</li>
-          <li class="takahe">Kate McIntosh- Takahe - 2 PTS</li>
-          <li class="kea">Ruby Cooper- Kea - 2 PTS</li>
-          <li class="tara">Zoe Berry- Tara iti - 2 PTS</li>
-        </ul>
+      <h3><u>Senior Speech Competition</u></h3>
+      <ul>
+        <li class="kea">Sam Stockley- Kea - 2 PTS</li>
+        <li class="takahe">Kate McIntosh- Takahe - 2 PTS</li>
+        <li class="kea">Ruby Cooper- Kea - 2 PTS</li>
+        <li class="tara">Zoe Berry- Tara iti - 2 PTS</li>
+      </ul>
 
-        <h3><u>Foster Hope - PJ Collection</u></h3>
-        <ul>
-          <li class="tieke">Tieke 1st Place - 5 PTS</li>
-          <li class="takahe">Takahe 2nd Place - 4 PTS</li>
-          <li class="tara">Tara iti 3rd Place - 3 PTS</li>
-          <li class="kea">Kea - 4th Place 2 PTS</li>
-          <li class="kokako">Kokako 5th Place 1 PT</li>
-        </ul>
-      </div>
+      <h3><u>Foster Hope - PJ Collection</u></h3>
+      <ul>
+        <li class="tieke">Tieke 1st Place - 5 PTS</li>
+        <li class="takahe">Takahe 2nd Place - 4 PTS</li>
+        <li class="tara">Tara iti 3rd Place - 3 PTS</li>
+        <li class="kea">Kea - 4th Place 2 PTS</li>
+        <li class="kokako">Kokako 5th Place 1 PT</li>
+      </ul>
+    </div>
 
     <sub>Refresh the page to watch the animation again</sub>
   </body>
   <script>
+    // Create a capturer that exports a WebM video
+    var capturer = new CCapture({ format: "webm" });
 
+    let animationFrames = 600;
     let data; //JSON data file
     let LBCLogoImg; //LBC logo
     var birdImgStr = [];
@@ -146,8 +148,13 @@
     var KeaCurrentPoint = "<?php echo $hKeaPoint; ?>";
     var KokakoCurrentPoint = "<?php echo $hKokakoPoint; ?>";
 
-    let CurrentPointArray = [TakaheCurrentPoint, TiekeCurrentPoint, TaraItiCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint];
-
+    let CurrentPointArray = [
+      TakaheCurrentPoint,
+      TiekeCurrentPoint,
+      TaraItiCurrentPoint,
+      KeaCurrentPoint,
+      KokakoCurrentPoint,
+    ];
 
     //Loads the images and data from github
     function preload() {
@@ -173,15 +180,18 @@
     function setup() {
       frameRate(60);
       var myCanvas = createCanvas(600, 600);
-      myCanvas.parent('canvas');
+      myCanvas.parent("canvas");
       mainScreenDraw();
       barCalc();
     }
 
     function draw() {
+      if (frameCount === 1) capturer.start();
       h++;
       mainScreenDraw();
       drawBars();
+      capturer.capture(document.getElementById("defaultCanvas0"));
+      if (frameCount == animationFrames) capturer.stop();
     }
 
     function mainScreenDraw() {
@@ -211,7 +221,6 @@
 
       image(LBCLogoImg, 10, 412, 120, 147);
 
-
       textSize(22);
       textAlign(CENTER);
 
@@ -239,19 +248,29 @@
       textAlign(CENTER);
       textSize(22);
       text(Kokako, xPos + 90 * 4, 523, 70, 523);
-
     }
 
     function barCalc() {
-      max = Math.max(TakaheCurrentPoint, TiekeCurrentPoint, TaraItiCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint);
+      max = Math.max(
+        TakaheCurrentPoint,
+        TiekeCurrentPoint,
+        TaraItiCurrentPoint,
+        KeaCurrentPoint,
+        KokakoCurrentPoint
+      );
 
-      min = Math.min(TakaheCurrentPoint, TiekeCurrentPoint, TaraItiCurrentPoint, KeaCurrentPoint, KokakoCurrentPoint);
-
+      min = Math.min(
+        TakaheCurrentPoint,
+        TiekeCurrentPoint,
+        TaraItiCurrentPoint,
+        KeaCurrentPoint,
+        KokakoCurrentPoint
+      );
 
       for (b = 0; b < 5; b++)
         barSize[b] = [map(CurrentPointArray[b], min, max, 375, 85)];
-        print(barSize);
-        mainScreenDraw();
+      print(barSize);
+      mainScreenDraw();
     }
 
     function drawBars() {
@@ -313,5 +332,13 @@
         }
       }
     }
-</script>
+
+    function exportImage() {
+      saveCanvas("housePoints" + Date.now(), "png");
+    }
+
+    function exportVideo() {
+      capturer.save();
+    }
+  </script>
 </html>
