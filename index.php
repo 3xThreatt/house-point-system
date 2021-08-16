@@ -336,7 +336,7 @@
     }
 
     function exportImage() {
-      saveCanvas("housePoints" + Date.now(), "png");
+      saveCanvas("housePoints", "png");
     }
 
     function exportVideo() {
