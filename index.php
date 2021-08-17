@@ -94,34 +94,35 @@
     <div id="canvas"></div>
     <div class="pointBreakdown">
       <h1>Points Breakdown</h1>
-      <h3><u>Academic Quiz Night</u></h3>
-      <ul>
-        <li class="kokako">Briar Geange - Kokako - 1 PT</li>
-        <li class="kokako">Emily Wauters - Kokako - 1PT</li>
-        <li class="tara">Mary McCallum - Tara iti - 1 PT</li>
-        <li class="kea">Paris Coulson - Kea - 1PT</li>
-        <li class="kokako">Jaime Bell - Kokako - 1 PT</li>
-        <li class="takahe">Lauren Ward - Takahe 1PT</li>
-        <li class="takahe">Thalia Philpot - Takahe - 1 PT</li>
-        <li class="kokako">Mr Martyn Longstaff - Kokako - 1 PT</li>
-      </ul>
+    <h3><u>General Knowledge Quiz</u></h3>
+        <ul class="Takahe">Year 13 Group - Takahe - 2nd place - 3pt</ul>
+        <ul class="Tieke">Year 13 Group - Tieke - 3pt</ul>
+        <ul class="Tara iti">Year 13 Group - Tara iti - 1st place - 5pt</ul>
+        <ul class="Kea">Year 13 Group - Kea - 3pt</ul>
+        <ul class="Kokako">Year 13 Group - Kokako - 3pt</ul>
 
-      <h3><u>Senior Speech Competition</u></h3>
-      <ul>
-        <li class="kea">Sam Stockley- Kea - 2 PTS</li>
-        <li class="takahe">Kate McIntosh- Takahe - 2 PTS</li>
-        <li class="kea">Ruby Cooper- Kea - 2 PTS</li>
-        <li class="tara">Zoe Berry- Tara iti - 2 PTS</li>
-      </ul>
+    <h3><u>Tough Guy Challenge</u></h3>
+        <ul class="Kokako">Kokako team - Fastest Average time 1st Place- 5pt</ul>
+        <ul class="Tieke">Tieke team - Fastest Average time 2nd Place- 4pt</ul>
+        <ul class="Takahe">Takahe team - Fastest Average time 3rd Place- 3pt</ul>
+        <ul class="Kea">Kea team - Fastest Average time 4th Place- 2pt</ul>
+        <ul class="Tara iti">Tara iti team - Fastest Average time 5th Place- 1pt</ul>
+        <ul class="Tara iti">Amberlee Gillies - Tough Guy Challenge - Tara iti - 5pt</ul>
+    
+    <h3><u>Year 9 Minecraft Competition</u></h3>
+        <ul class="Takahe">Riley Young - 2nd place - Takahe - 5pt</ul>
+        <ul class="Tieke">Callum MacVicar - 2nd place - Tieke - 4pt</ul>
+        <ul class="Tieke">JC La Grange - 2nd place - Tieke - 4pt</ul>
+        <ul class="Tieke">Daniel Hyde - 3nd place - Tieke - 3pt</ul>
 
-      <h3><u>Foster Hope - PJ Collection</u></h3>
-      <ul>
-        <li class="tieke">Tieke 1st Place - 5 PTS</li>
-        <li class="takahe">Takahe 2nd Place - 4 PTS</li>
-        <li class="tara">Tara iti 3rd Place - 3 PTS</li>
-        <li class="kea">Kea - 4th Place 2 PTS</li>
-        <li class="kokako">Kokako 5th Place 1 PT</li>
-      </ul>
+    <h3><u>Staff vs Students Football</u></h3>
+        <ul class="Kokako">Phoebe Young - MVP Student - Kokako- 5pt</ul>
+        <ul class="Tieke">M M Carroll - MVP Staff - Tieke - 5pt</ul>
+    
+    <h3><u>Top Senior Speech</u></h3>
+        <ul class="Kea">Sam Stockley - Top Senior Speech - Kea - 5pt</ul>
+
+
     </div>
     <button onclick="exportImage()">Export Image</button>
     <button onclick="exportVideo()">Export Video</button>
