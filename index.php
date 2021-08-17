@@ -182,7 +182,6 @@
       frameRate(60);
       var myCanvas = createCanvas(600, 600);
       myCanvas.parent("canvas");
-      loadImages();
       mainScreenDraw();
       barCalc();
     }
