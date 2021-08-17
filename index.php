@@ -158,7 +158,7 @@
     ];
 
     //Loads the images and data from github
-    function loadImages() {
+    function preload() {
       LBCLogoImg = loadImage(
         "https://raw.githubusercontent.com/3xThreatt/house-point-system/main/LBC-logo.png "
       );
