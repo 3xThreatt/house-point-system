@@ -94,33 +94,46 @@
     <div id="canvas"></div>
     <div class="pointBreakdown">
      <h1>Points Breakdown</h1>
-    <h3><u>General Knowledge Quiz</u></h3>
-        <li class="takahe">Year 13 Group - Takahe - 2nd place - 3pt</li>
-        <li class="tieke">Year 13 Group - Tieke - 3pt</li>
-        <li class="tara">Year 13 Group - Tara iti - 1st place - 5pt</li>
-        <li class="kea">Year 13 Group - Kea - 3pt</li>
-        <li class="kokako">Year 13 Group - Kokako - 3pt</li>
+    <h3><u>Open Night/Day Helpers</u></h3>
+        <li class="takahe">Takahe – Total 99 ppl – 5pts</li>
+        <li class="kea">Kea – Total 88 ppl – 4 pts</li>
+        <li class="tara">Tara Iti - Total 83 ppl – 3pts</li>
+        <li class="kokako">Kokako – Total 75 ppl -2pts</li>
+        <li class="tieke">Tieke – Total 75 ppl -2pts</li>
 
-    <h3><u>Tough Guy Challenge</u></h3>
-        <li class="kokako">Kokako team - Fastest Average time 1st Place- 5pt</li>
-        <li class="tieke">Tieke team - Fastest Average time 2nd Place- 4pt</li>
-        <li class="takahe">Takahe team - Fastest Average time 3rd Place- 3pt</li>
-        <li class="kea">Kea team - Fastest Average time 4th Place- 2pt</li>
-        <li class="tara">Tara iti team - Fastest Average time 5th Place- 1pt</li>
-        <li class="tara">Amberlee Gillies - Tough Guy Challenge - Tara iti - 5pt</li>
+    <h3><u>Daffodil Day Steps Challenge</u></h3>
+        <li class="tieke">1st – Tieke – 5pts</li>
+        <li class="kea">2nd – Kea – 4pt</li>
+        <li class="takahe">3rd – Takahe – 3pts</li>
+        <li class="tara">4th – Tara iti – 2pts</li>
+        <li class="kokako">5th – Kokako – 1pt</li>
+        
+    <h3><u>Lock Down Photography Competition</u></h3>
+        <li class="tara">Spencer Jones – 1st – Tara iti – 3pts</li>
+        <li class="kea">Jay Anantachart – 2nd – Kea - 2pts</li>
+        <li class="tara">Grace Wang – Tara iti - 3rd – 1pt</li>
     
-    <h3><u>Year 9 Minecraft Competition</u></h3>
-        <li class="takahe">Riley Young - 2nd place - Takahe - 5pt</li>
-        <li class="tieke">Callum MacVicar - 2nd place - Tieke - 4pt</li>
-        <li class="tieke">JC La Grange - 2nd place - Tieke - 4pt</li>
-        <li class="tieke">Daniel Hyde - 3nd place - Tieke - 3pt</li>
+    <h3><u>Lock Down Trick Shot Challenge</u></h3>
+        <li class="kokako">Keegan Hall – 1st- Kokako - 3pts</li>
+        <li class="takahe">Daniel Wood – 2nd – Takahe – 2pts</li>
 
-    <h3><u>Staff vs Students Football</u></h3>
-        <li class="kokako">Phoebe Young - MVP Student - Kokako- 5pt</li>
-        <li class="tieke">M M Carroll - MVP Staff - Tieke - 5pt</li>
-    
-    <h3><u>Top Senior Speech</u></h3>
-        <li class="kea">Sam Stockley - Top Senior Speech - Kea - 5pt</li>
+    <h3><u>Maori Language Week</u></h3>
+        <li class="takahe"></li>
+        <li class="kea"></li>
+        <li class="tara"></li>
+        <li class="kokako"></li>
+        <li class="tieke"></li>
+
+    <h3><u>Staff Bingo</u></h3>
+        <li class="takahe"></li>
+        <li class="kea"></li>
+        <li class="tara"></li>
+        <li class="kokako"></li>
+        <li class="tieke"></li>
+
+    <h3><u>Minecraft Competition</u></h3>
+        <li class="kokako">Ashlynn Somers – Winner - Kokako – 3 pts</li>
+
     </div>
     <button onclick="exportImage()">Export Image</button>
     <button onclick="exportVideo()">Export Video</button>
@@ -207,7 +220,7 @@
       textSize(35).fill(255);
       text(s, 14, 30, 160, 150);
 
-      let q = "Term 3 Week 3";
+      let q = "Term 3 Week 9";
       textAlign(LEFT);
       textFont("Calibri").textStyle(BOLD);
       textSize(25).fill(255);
