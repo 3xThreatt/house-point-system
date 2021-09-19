@@ -33,7 +33,8 @@
       .pointBreakdown {
         display: block;
         margin-left: 605px;
-        padding: 10px;
+        padding: 0;
+        padding-left: 20px;
         font-family: "Calibri";
         height: 600px;
         background-color: rgb(0, 88, 124);
