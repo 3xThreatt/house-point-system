@@ -45,6 +45,11 @@
 
       li {
         font-size: 17px;
+        list-style: none;
+      }
+
+      h3{
+        margin-bottom: 2px;
       }
 
       .takahe::before {
