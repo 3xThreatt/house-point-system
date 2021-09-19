@@ -361,6 +361,7 @@
     }
 
     function exportVideo() {
+      console.log("Capturer not configured");
       //capturer.save();
     }
   </script>
