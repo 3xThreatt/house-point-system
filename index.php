@@ -40,6 +40,10 @@
         background-color: rgb(0, 88, 124);
       }
 
+      h1.pointsBreakdown{
+        padding-bottom: 10px;
+      }
+
       ul {
         list-style: none;
       }
