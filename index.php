@@ -212,7 +212,7 @@
       h++;
       mainScreenDraw();
       drawBars();
-      capturer.capture(myCanvas.canvas);
+      capturer.capture(document.getElementById("defaultCanvas0"));
       if (frameCount == animationFrames) capturer.stop();
     }
 
@@ -360,7 +360,6 @@
     }
 
     function exportVideo() {
-      console.log("Capturer not configured");
       capturer.save();
     }
   </script>
