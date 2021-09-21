@@ -246,7 +246,7 @@
       textSize(22);
       textAlign(CENTER);
 
-      let Takahe = "<?php echo $hTakaheName; ?>";
+      let Takahe = "Takahē"; //"<#?php echo $hTakaheName; ?>"; Temporary fix!!!
       textAlign(CENTER);
       textSize(22);
       text(Takahe, xPos + 90 * 0, 523, 70, 523);
