@@ -158,18 +158,18 @@
     let barSize = [];
     let framePerBar = [];
 
-    var TakahēCurrentPoint = "<?php echo $hTakahēPoint; ?>";
+    var TakaheCurrentPoint = "<?php echo $hTakahePoint; ?>";
     var TiekeCurrentPoint = "<?php echo $hTiekePoint; ?>";
     var TaraItiCurrentPoint = "<?php echo $hTaraItiPoint; ?>";
     var KeaCurrentPoint = "<?php echo $hKeaPoint; ?>";
-    var KōkakoCurrentPoint = "<?php echo $hKōkakoPoint; ?>";
+    var KokakoCurrentPoint = "<?php echo $hKokakoPoint; ?>";
 
     let CurrentPointArray = [
-      TakahēCurrentPoint,
+      TakaheCurrentPoint,
       TiekeCurrentPoint,
       TaraItiCurrentPoint,
       KeaCurrentPoint,
-      KōkakoCurrentPoint,
+      KokakoCurrentPoint,
     ];
 
     //Loads the images and data from github
@@ -240,10 +240,10 @@
       textSize(22);
       textAlign(CENTER);
 
-      let Takahē = "<?php echo $hTakahēName; ?>";
+      let Takahe = "<?php echo $hTakaheName; ?>";
       textAlign(CENTER);
       textSize(22);
-      text(Takahē, xPos + 90 * 0, 523, 70, 523);
+      text(Takahe, xPos + 90 * 0, 523, 70, 523);
 
       let Tieke = "<?php echo $hTiekeName; ?>";
       textAlign(CENTER);
@@ -260,27 +260,27 @@
       textSize(22);
       text(Kea, xPos + 90 * 3, 523, 70, 523);
 
-      let Kōkako = "<?php echo $hKōkakoName; ?>";
+      let Kokako = "<?php echo $hKokakoName; ?>";
       textAlign(CENTER);
       textSize(22);
-      text(Kōkako, xPos + 90 * 4, 523, 70, 523);
+      text(Kokako, xPos + 90 * 4, 523, 70, 523);
     }
 
     function barCalc() {
       max = Math.max(
-        TakahēCurrentPoint,
+        TakaheCurrentPoint,
         TiekeCurrentPoint,
         TaraItiCurrentPoint,
         KeaCurrentPoint,
-        KōkakoCurrentPoint
+        KokakoCurrentPoint
       );
 
       min = Math.min(
-        TakahēCurrentPoint,
+        TakaheCurrentPoint,
         TiekeCurrentPoint,
         TaraItiCurrentPoint,
         KeaCurrentPoint,
-        KōkakoCurrentPoint
+        KokakoCurrentPoint
       );
 
       for (b = 0; b < 5; b++)
