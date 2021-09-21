@@ -6,7 +6,9 @@
     <meta name="author" content="Robin Nowlan" />
     <meta name="viewport" content="width=device-width, initial-scale=0.80" />
     <title>Long Bay College House Points</title>
-    <script src="https://raw.githubusercontent.com/spite/ccapture.js/master/build/CCapture.all.min.js"></script>
+    <script src="CCapture.all.min.js"></script>
+    <script src="webm-writer-0.2.0.js"></script>
+    <script src="download.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
     <?php ini_set('display_errors', 1);
           ini_set('display_startup_errors', 1);
@@ -144,7 +146,11 @@
   </body>
   <script>
     // Create a capturer that exports a WebM video
-    //var capturer = new CCapture({ format: "webm" });
+    const capturer = new CCapture({
+      framerate: 60,
+      format: "webm",
+      name: "animation",
+    })
 
     let animationFrames = 600;
     let data; //JSON data file
@@ -202,12 +208,12 @@
     }
 
     function draw() {
-      //if (frameCount === 1) capturer.start();
+      if (frameCount === 1) capturer.start();
       h++;
       mainScreenDraw();
       drawBars();
-      //capturer.capture(document.getElementById("defaultCanvas0"));
-      //if (frameCount == animationFrames) capturer.stop();
+      capturer.capture(myCanvas.canvas);
+      if (frameCount == animationFrames) capturer.stop();
     }
 
     function mainScreenDraw() {
@@ -355,7 +361,7 @@
 
     function exportVideo() {
       console.log("Capturer not configured");
-      //capturer.save();
+      capturer.save();
     }
   </script>
 </html>
