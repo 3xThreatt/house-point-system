@@ -106,39 +106,42 @@
     <div id="canvas"></div>
     <div class="pointBreakdown">
      <h1>Points Breakdown</h1>
-    <h3><u>Open Night/Day Helpers</u></h3>
-        <li class="takahe">Takahē – Total 99 ppl – 5pts</li>
-        <li class="kea">Kea – Total 88 ppl – 4 pts</li>
-        <li class="tara">Tara Iti - Total 83 ppl – 3pts</li>
-        <li class="kokako">Kōkako – Total 75 ppl -2pts</li>
-        <li class="tieke">Tieke – Total 75 ppl -2pts</li>
+    <h3><u>Bird Art Competition</u></h3>
+        <li class="kokako">Avalon Martin - 1st – Kokako – 5 pts</li>
+        <li class="tara">Alice Dibble – 2nd - Tara iti – 3 pts</li>
+        <li class="tieke">Sahara Brook – 3rd - Tieke – 2pts</li>
 
-    <h3><u>Daffodil Day Steps Challenge</u></h3>
-        <li class="tieke">1st – Tieke – 5pts</li>
-        <li class="kea">2nd – Kea – 4pt</li>
-        <li class="takahe">3rd – Takahē – 3pts</li>
-        <li class="tara">4th – Tara iti – 2pts</li>
-        <li class="kokako">5th – Kōkako – 1pt</li>
+    <h3><u>Atawhai Quick Fire House Challenge</u></h3>
+        <li class="tara">Tara iti – 1st – 149 challenges submitted – 5pts</li>
+        <li class="tieke">Tieke – 2nd – 135 challenges submitted – 4pts</li>
+        <li class="takahe">Takahe – 3rd – 116 challenges submitted – 3pts</li>
+        <li class="kea">Kea – 4th – 104 challenges submitted – 2pts</li>
+        <li class="kokako">Kokako – 5th – 85 challenges submitted – 1pt</li>
         
-    <h3><u>Lock Down Photography Competition</u></h3>
-        <li class="tara">Spencer Jones – 1st – Tara iti – 3pts</li>
-        <li class="kea">Jay Anantachart – 2nd – Kea - 2pts</li>
-        <li class="tara">Grace Wang – Tara iti - 3rd – 1pt</li>
+    <h3><u>Talent Quest</u></h3>
+      <h4><i>Performance Category</i></h4>
+        <li class="kea">Emily Cuff – 1st Performance Category – Kea - 5pts</li>
+        <li class="takahe">Michael Read- Percival – 2nd Performance Category – Takahe - 3 pts</li>
+        <li class="kokako">Gabby Dew – 3rd Performance Category – Kokako - 2 pts</li>
+        <li>Ella Aguas and Libby Sheleg – Performance – Kea/Tieke – 1pt </li>
+        <li>Kristen McCallum and Georgia Breeze – Performance – Takahe/Tara iti – 1pt</li>
+        <li class="tieke">Mikayla Robson – Performance – Tieke – 1pt</li>
+        <li class="tara">Katy Comar – Performance – Tara iti – 1pt</li>
+        <li class="kokako"> Anna Gorbey – Performance – Kokako – 1pt</li>
+        <li class="takahe">Daneil Gorbey – Performance – Takahe – 1 pt</li>
+
+      <h4><i>Visual Arts Category</i></h4>
+        <li class="kea">Ryo Nishikawa - 1st - Visual Arts Category Kea – 5pts</li>
+        <li class="tara">Tia Maitland - 2nd - Visual Art Category – Tara iti - 3 pts</li>
+        <li class="takahe">Hiu Kwan Lau - 3rd - Visual Arts Category – Takahe – 2pts</li>
+        <li class="kea">Elise Cuff – Visual Arts - Kea – 1pt</li>
+        <li class="kokako">Kiara-Jade Baker – Visual Arts – Kokako - 1pt</li>
+
     
-    <h3><u>Lock Down Trick Shot Challenge</u></h3>
-        <li class="kokako">Keegan Hall – 1st- Kōkako - 3pts</li>
-        <li class="takahe">Daniel Wood – 2nd – Takahē – 2pts</li>
-
-    <h3><u>Maori Language Week</u></h3>
-        <li class="kea">Kea – JAC, CHB, GRO, FOD, OLP, KEI, MIS, VAE, BIC – 5 Pts</li>
-        <li class="kokako">Kōkako- OSN, TUE, HEA, GLE, BES – 4 Pts</li>
-        <li class="tara">Tara iti – SHX, CUR, MIA, LEM, WIN, JAN – 4 Pts</li>
-        <li class="tieke">Tieke - LEH, JEN, DAA – 3 Pts</li>
-        <li class="takahe">Takahē – FNN ,STR, LUP, 2 Pts</li>
-
-    <h3><u>Minecraft Competition</u></h3>
-        <li class="kokako">Ashlynn Somers – Winner - Kōkako – 3 pts</li>
-
+    <h3><u>Cuppa with a Teacha Trivia</u></h3>
+      <li class="tara">Mr Field – 1st – Tara iti - 5pts</li>
+      <li class="takahe">Mr Parslow - 2nd – Takahe – 3pts</li>
+      <li class="kea">Mr O’Leary – 3rd – Kea – 2 pts</li>
     </div>
     <button onclick="exportImage()">Export Image</button>
     <button onclick="exportVideo()">Export Video</button>
