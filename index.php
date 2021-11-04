@@ -229,7 +229,7 @@
       textSize(35).fill(255);
       text(s, 14, 30, 160, 150);
 
-      let q = "Term 3 Week 9";
+      let q = "Term 4 Week 3";
       textAlign(LEFT);
       textFont("Calibri").textStyle(BOLD);
       textSize(25).fill(255);
