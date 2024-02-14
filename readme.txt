@@ -1,3 +1,1 @@
-The script runs using p5.js 
-Requires connection to the internet to run
-Runs in browser, open index.html to run
+Archived project from high school where the head faculty required a tracking system for house points.
